@@ -1,0 +1,167 @@
+/* Reset do css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* serve para que o max-width das caixas seja respeitado, mesmo colocando preenchimento */
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(.//bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+header {
+    margin-top: 32px;
+    /* text-align: center; /* esse comando só funciona se a tag for identificada como texto, mesmo não sendo. <div> por exemplo não é texto, portanto não text-align não funcionaria */
+    height: 120px; /* definimos a altura para não causar erros na animação contida no header div */
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex; /* serve para ajustar os elementos dentro da caixa */
+    padding: 4px;
+
+    transition: transform .3s; /* Complemento do comando abaixo. Serve para atribuir uma transição e definir seu tempo (ou outros atributos) que nesse caso é transform em 3 segundos*/
+}
+
+header div:hover {
+    transform: scale(1.1); /* :hover faz com que o elemento tenha uma ação quando o ponteiro do mouse estiver em cima. O transform: scale serve para aumentar (ou diminuir) o tamanho do elemento */
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* essas 2 últimas linhas de código display e flex-direction serviram para colocar as caixas uma embaixo da outra e habilitar o espaçamento (gap) entre elas */
+    gap: 24px;
+
+    margin: 32px auto; /* 32px em cima e embaixo do main e aos lados auto */
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); /* Bordas coloridas com gradient só podem ser aplicadas com background-image, por isso foi necessário fazer as sections no html. */
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap; /* Faz com que os elementos não empurrem a caixa, fazendo com que eles respeitem o tamanho máximo definido e se posicionem abaixo do outro, casa hajam suficientes para ultrapassar o limite */
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+
+
+.game-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+
+.channel-list img {
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid #443E54;
+}
+
+
+
+/* animation
+
+Para fazer animações no CSS são necessárias 2 coisas:
+
+    * Definir a animação (@keyframes nomeQueQuiser);
+    * Aplica a animação no elemento desejado.
+
+*/
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header div {
+    animation: fromTop .7s .5s backwards; /* nome | tempo de animação | delay | carregar a página com o from ativado */
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+/* Neste html o main possui 3 sections, ou seja, o pai (main) possui 3 filhos (sections), que podemos chamar dessa forma no CSS para facilitar a atribuição de estilo/animação: */
+
+main section:nth-child(1) {
+    animation-delay: .7s;
+}
+
+main section:nth-child(2) {
+    animation-delay: .9s;
+}
+
+main section:nth-child(3) {
+    animation-delay: 1.1s;
+}
