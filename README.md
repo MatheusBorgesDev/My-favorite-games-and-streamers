@@ -8,7 +8,8 @@
 
 ![preview](./.github/preview.png)
 
-🔗 [Click here to access](https://matheusborgesdev.github.io/My-movies-and-series/)
+🔗 [Click here to access](https://matheusborgesdev.github.io/My-favorite-games-and-streamers
+/)
 
 ## 💻 Technologies
 
