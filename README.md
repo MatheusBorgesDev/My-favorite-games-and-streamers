@@ -1,6 +1,6 @@
 # My favorite games and streamers
 
-## A website to highlight the user's favorite games and streamers
+## A website template to highlight the user's favorite games and streamers
 
 > Project built during the Rocketseat educational institution's Next Level event.
 > 
