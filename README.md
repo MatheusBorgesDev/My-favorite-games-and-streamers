@@ -1,17 +1,22 @@
-# NLW eSports | Trilha Explorer
+# My favorite games and streamers
 
-> Projeto construído no evento Next Level Week da Rocketseat.
+## A website to highlight the user's favorite games and streamers
+
+> Project built during the Rocketseat educational institution's Next Level event.
+> 
+> The classes aimed to build the application's HTML and CSS from a Figma model.
 
 ![preview](./.github/preview.png)
 
-🔗 [Clique aqui para acessar](https://mbslash.github.io/nlw-eSports---Rocketseat/)
+🔗 [Click here to access](https://matheusborgesdev.github.io/My-movies-and-series/)
 
-## 💻 Tecnologias
+## 💻 Technologies
 
 - HTML
 - CSS
 - Git e Github
+- Figma
 
-## 📧 Contato
+## 📧 Contact
 
 matheusb.dev@gmail.com
