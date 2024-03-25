@@ -2,7 +2,7 @@
 
 ## A website template to highlight the user's favorite games and streamers
 
-> The project aimed to build the application's HTML and CSS from a Figma model.
+> The project aimed to build the application's HTML and CSS from a Figma model, improving knowledge of box model, flex display, gradient color and more.
 
 ![preview](./.github/preview.png)
 
