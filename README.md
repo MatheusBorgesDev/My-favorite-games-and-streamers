@@ -1,10 +1,8 @@
-# My favorite games and streamers
+# My Favorite Games and Streamers
 
 ## A website template to highlight the user's favorite games and streamers
 
-> Project built during the Rocketseat educational institution's Next Level event.
-> 
-> The classes aimed to build the application's HTML and CSS from a Figma model.
+> The project aimed to build the application's HTML and CSS from a Figma model.
 
 ![preview](./.github/preview.png)
 
